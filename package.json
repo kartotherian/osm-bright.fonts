@@ -1,0 +1,9 @@
+{
+    "name": "osm-bright.fonts",
+    "version": "1.0.0",
+    "description": "Fonts for OSM Bright CartoCSS style",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/nyurik/osm-bright.fonts.git"
+    }
+}
