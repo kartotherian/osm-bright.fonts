@@ -13,7 +13,7 @@ fontDir = sys.argv[1]
 if not fontDir.endswith('/'): fontDir += '/'
 
 files = []
-scripts = ['Armenian', 'Balinese', 'Bengali', 'Devanagari', 'Ethiopic', 'Georgian', 'Gujarati', 'Gurmukhi', 'Hebrew', 'Javanese', 'Kannada', 'Khmer', 'Lao', 'Malayam', 'Mongolian', 'Myanmar', 'Oriya', 'Sinhala', 'Tamil', 'Thai', 'Tibetan']
+scripts = ['Armenian', 'Balinese', 'Bengali', 'Devanagari', 'Ethiopic', 'Georgian', 'Gujarati', 'Gurmukhi', 'Hebrew', 'Javanese', 'Kannada', 'Khmer', 'Lao', 'Malayam', 'Mongolian', 'Myanmar', 'Oriya', 'Sinhala', 'Tamil', 'Thai', 'Tibetan', 'Tifinagh']
 
 rootDir = os.path.abspath(os.path.dirname(os.path.dirname(inspect.getfile(inspect.currentframe())))) + '/'
 
@@ -33,7 +33,7 @@ def findFont(style, script):
 for style in ['Regular', 'Bold', 'Italic']:
     fn = filename(style, ext = 'ttf')
     shutil.copy(fn, rootDir + 'fonts')
-    for script in ['Regular', 'Bold', 'Italic']:
+    for script in scripts:
         fn = findFont(style, script)
         if not fn: continue
         shutil.copy(fn, rootDir + 'fonts')
