@@ -1,13 +1,11 @@
 {
   "name": "osm-bright-fonts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fonts for OSM Bright CartoCSS style",
   "main": "./package.json",
   "repository": {
     "type": "git",
     "url": "git://github.com/kartotherian/osm-bright.fonts.git"
   },
-  "bugs": {
-    "url": "https://github.com/kartotherian/osm-bright.fonts/issues"
-  }
+  "bugs":"https://github.com/kartotherian/osm-bright.fonts/issues"
 }
