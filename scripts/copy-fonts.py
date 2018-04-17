@@ -13,7 +13,9 @@ fontDir = sys.argv[1]
 if not fontDir.endswith('/'): fontDir += '/'
 
 files = []
-scripts = ['Armenian', 'Balinese', 'Bengali', 'Devanagari', 'Ethiopic', 'Georgian', 'Gujarati', 'Gurmukhi', 'Hebrew', 'Javanese', 'Kannada', 'Khmer', 'Lao', 'Malayam', 'Mongolian', 'Myanmar', 'Oriya', 'Sinhala', 'Tamil', 'Thai', 'Tibetan', 'Tifinagh']
+# Thaana = font for Divehi
+# ImperialAramaic = font for Aramaic
+scripts = ['Armenian', 'Balinese', 'Bengali', 'Cherokee', 'Devanagari', 'Ethiopic', 'Georgian', 'Gujarati', 'Gurmukhi', 'Hebrew', 'ImperialAramaic', 'Javanese', 'Kannada', 'Khmer', 'Lao', 'Malayalam', 'Mongolian', 'Myanmar', 'Oriya', 'Sinhala', 'Tamil', 'Telugu', 'Thaana', 'Thai', 'Tibetan', 'Tifinagh']
 
 rootDir = os.path.abspath(os.path.dirname(os.path.dirname(inspect.getfile(inspect.currentframe())))) + '/'
 
