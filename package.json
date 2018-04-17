@@ -1,6 +1,6 @@
 {
   "name": "osm-bright-fonts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Fonts for OSM Bright CartoCSS style",
   "main": "./package.json",
   "repository": "kartotherian/osm-bright.fonts",
